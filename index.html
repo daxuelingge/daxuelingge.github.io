@@ -64,6 +64,97 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-css3xuanzeqi" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/06/28/css3xuanzeqi/" class="article-date">
+  <time datetime="2016-06-28T07:54:41.000Z" itemprop="datePublished">2016-06-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/css3xuanzeqi/">css3xuanzeqi</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="css3选择器"><a href="#css3选择器" class="headerlink" title="css3选择器"></a>css3选择器</h1><h3 id="1-子元素选择器"><a href="#1-子元素选择器" class="headerlink" title="1.子元素选择器"></a>1.子元素选择器</h3><p>表达方式为E&gt;F 选中的只是子元素F 子孙不会被选</p>
+<p><img src="https://raw.githubusercontent.com/daxuelingge/daxuelingge.github.io/master/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202016-06-28%20%E4%B8%8B%E5%8D%884.09.15.png" alt="Mou icon"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.div1&gt;div</span><br></pre></td></tr></table></figure>
+<p>表达为选择.div1的子元素div(.div2)不会选择孙子级（.div3）</p>
+<p>与子元素相类似的后代选择器E F会选择所有的F 包括子子孙孙</p>
+<h3 id="2-兄弟选择器"><a href="#2-兄弟选择器" class="headerlink" title="2.兄弟选择器"></a>2.兄弟选择器</h3><h4 id="2-1相邻兄弟选择器"><a href="#2-1相邻兄弟选择器" class="headerlink" title="2.1相邻兄弟选择器"></a>2.1相邻兄弟选择器</h4><p><img src="https://raw.githubusercontent.com/daxuelingge/daxuelingge.github.io/master/%E7%9B%B8%E9%82%BB%E5%85%84%E5%BC%9F%E9%80%89%E6%8B%A9%E5%99%A8.png" alt="Mou icon"></p>
+<p>以下命令只能选中div（.three）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h2+div</span><br></pre></td></tr></table></figure>
+<p>相邻兄弟表达方式为E+F，有以下特点</p>
+<ul>
+<li>必须是同级的</li>
+<li>必须是相邻的</li>
+<li>必须是在下方</li>
+<li>有且只有一个符合</li>
+</ul>
+<h4 id="2-2通用兄弟选择器"><a href="#2-2通用兄弟选择器" class="headerlink" title="2.2通用兄弟选择器"></a>2.2通用兄弟选择器</h4><p>如2.1图，以下命令可以选择div（.three）,div(.five)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">h2~div</span><br></pre></td></tr></table></figure>
+<p>通用兄弟选择器表达方式为E~F,有以下特点</p>
+<ul>
+<li>必须是同级的</li>
+<li>必须在下方 </li>
+<li>可以有多个符合</li>
+</ul>
+<h3 id="3-属性选择器"><a href="#3-属性选择器" class="headerlink" title="3.属性选择器"></a>3.属性选择器</h3><ul>
+<li>E[attr]</li>
+<li>E[attr=“value”]  </li>
+<li>E[attr~=“value”] ~：表示几个以空格隔开的属性值中包含了“value”</li>
+<li>E[attr^=“value”] ^:以value开头的值  </li>
+<li>E[attr$=“value”] $:以value结尾的值 </li>
+<li>E[attr<em>=“value”] </em>：包含了value的值</li>
+<li>E[attr|=“value”] |: 以value或value-开头</li>
+<li>E[attr=”value”]和E[attr*=”value”]是最实用的</li>
+</ul>
+<h3 id="4-伪类选择器"><a href="#4-伪类选择器" class="headerlink" title="4.伪类选择器"></a>4.伪类选择器</h3><ul>
+<li>:first-child 选择某个元素的第一个子元素</li>
+<li>:last-child 选择某个元素的最后一个子元素</li>
+<li>:nth-last-child()选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算；</li>
+<li>:nth-of-type()选择指定的元素；</li>
+<li>:nth-last-of-type()选择指定的元素，从元素的最后一个开始计算；</li>
+<li>:first-of-type选择一个上级元素下的第一个同类子元素；</li>
+<li>:last-of-type选择一个上级元素的最后一个同类子元素；</li>
+<li>:only-child选择的元素是它的父元素的唯一一个子元素；</li>
+<li>:only-of-type选择一个元素是它的上级元素的唯一一个相同类型的子元素；</li>
+<li>:empty选择的元素里面没有任何内容。</li>
+<li>:nth-child()———选择某个元素的一个或多个特定的子元素；</li>
+<li>:nth-child(length); ———-  /<em>参数是具体数字</em>/</li>
+<li>:nth-child(n); ———-  /<em>参数是n,n从1开始计算</em>/</li>
+<li>:nth-child(2n); ——— /<em>n的倍数选择，n从1开始算</em>/</li>
+<li>:nth-child(n+length); ——— /<em>选择大于等于length后面的元素</em>/</li>
+<li>:nth-child(-n+length); ———  /<em>选择小于等于length前面的元素</em>/</li>
+<li>:nth-child(2n+1); ———  /<em>表示隔几选一</em>/ odd even</li>
+</ul>
+<h3 id="5-否定选择器"><a href="#5-否定选择器" class="headerlink" title="5.否定选择器"></a>5.否定选择器</h3><p>not()通常配合属性选择器使用</p>
+<p>ex:input:not([type=”submit”]){border:1px solid red;}</p>
+<p>上面例子是选中所有input中除了有type=submit属性元素之外的所有元素</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/06/28/css3xuanzeqi/" data-id="cipzf416o00007isfm8dpxwp3" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-meta" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/06/24/meta/" class="article-date">
@@ -106,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="ciptn6vx20000rhsfl1fxpr1e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="cipzf416t00017isfj0o1bo35" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/css3danwei/" data-id="ciptn6vx90002rhsfsw2jpdj4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/css3danwei/" data-id="cipzf416y00037isfbtfsq5t3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -208,7 +299,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hexobokedajian/" data-id="ciptn6vx70001rhsf1p0kxgp7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hexobokedajian/" data-id="cipzf416v00027isf5pp8kj69" class="article-share-link">Share</a>
       
       
     </footer>
@@ -246,6 +337,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/06/28/css3xuanzeqi/">css3xuanzeqi</a>
+          </li>
         
           <li>
             <a href="/2016/06/24/meta/">meta</a>
