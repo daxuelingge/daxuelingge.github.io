@@ -64,6 +64,63 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-animation" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/02/animation/" class="article-date">
+  <time datetime="2016-07-02T03:00:33.000Z" itemprop="datePublished">2016-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/02/animation/">animation</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="animation-属性是一个简写属性，可用于设置7个动画属性"><a href="#animation-属性是一个简写属性，可用于设置7个动画属性" class="headerlink" title="animation 属性是一个简写属性，可用于设置7个动画属性"></a>animation 属性是一个简写属性，可用于设置7个动画属性</h3><h4 id="1-animation-name-动画属性名"><a href="#1-animation-name-动画属性名" class="headerlink" title="1.animation-name 动画属性名"></a>1.animation-name 动画属性名</h4><p>规定需要绑定到选择器keyframe名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	animation-name:haha</span><br><span class="line">&#125;</span><br><span class="line">@keyframes haha&#123;</span><br><span class="line">	from&#123;&#125;</span><br><span class="line">	to&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="1-1-keyframes-动画关键帧"><a href="#1-1-keyframes-动画关键帧" class="headerlink" title="1.1.@keyframes 动画关键帧"></a>1.1.@keyframes 动画关键帧</h4><p>通常设置 from  to 和百分比来控制动画开始到结束的过程变化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@keyframes haha&#123;</span><br><span class="line">	from&#123;&#125;</span><br><span class="line">	to&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes haha&#123;</span><br><span class="line">	0%&#123;&#125;</span><br><span class="line">	100%&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-animation-duration"><a href="#2-animation-duration" class="headerlink" title="2.animation-duration"></a>2.animation-duration</h4><p>规定完成动画所花费的时间，以秒或毫秒计算</p>
+<h4 id="3-animation-timing-function-动画效果"><a href="#3-animation-timing-function-动画效果" class="headerlink" title="3.animation-timing-function 动画效果"></a>3.animation-timing-function 动画效果</h4><p>定义动画以何种效果呈现</p>
+<p>ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier</p>
+<h4 id="4-animation-iteration-count"><a href="#4-animation-iteration-count" class="headerlink" title="4.animation-iteration-count"></a>4.animation-iteration-count</h4><p>指定元素播放动画的循环次数，infinite 无限，数字代表几次</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">animation-iteration-count:(1)</span><br></pre></td></tr></table></figure>
+<h4 id="5-animation-delay"><a href="#5-animation-delay" class="headerlink" title="5.animation-delay"></a>5.animation-delay</h4><p>定义在动画开始之前的延迟，单位为s</p>
+<h4 id="6-animation-direction"><a href="#6-animation-direction" class="headerlink" title="6.animation-direction"></a>6.animation-direction</h4><p>指定元素动画播放的方向</p>
+<p>默认值为normal，动画的每次循环都是向前播放</p>
+<p>alternate，动画播放在第偶数次向前播放，第奇数次向反方向播放</p>
+<h4 id="7-animation-fill-mode"><a href="#7-animation-fill-mode" class="headerlink" title="7.animation-fill-mode"></a>7.animation-fill-mode</h4><p>animation-fill-mode：none | forwards | backwards | both [ , none | forwards | backwards | both </p>
+<p>默认值为：none；适用于所有元素，包含伪对象：after/before</p>
+<ul>
+<li>none：默认值。不设置对象动画之外的状态；</li>
+<li>forwards：设置对象状态问哦动画结束时的状态</li>
+<li>backwards：设置对象状态为动画开始时的状态</li>
+<li>both：设置对象状态为动画结束或开始的状态</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/02/animation/" data-id="ciq4n7u1f0001r0sftxk8c607" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-transition" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/02/transition/" class="article-date">
@@ -119,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4kxh7f0002o8sf5v2mjg2n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4n7u1k0003r0sfis4nd24t" class="article-share-link">Share</a>
       
       
     </footer>
@@ -210,7 +267,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq4kxh760000o8sfnem7l0j7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq4n7u260004r0sfh44sm29j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -262,7 +319,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="ciq4kxh7c0001o8sf0jtxtrjq" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="ciq4n7u1a0000r0sfwytbz6xo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -306,7 +363,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/css3单位/" data-id="ciq4kxh7i0003o8sffazefguv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/css3单位/" data-id="ciq4n7u1i0002r0sfrsw4jch5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -364,7 +421,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hexo博客搭建/" data-id="ciq4kxh860004o8sf3va9rcxi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hexo博客搭建/" data-id="ciq4n7u2k0005r0sfvzh5cges" class="article-share-link">Share</a>
       
       
     </footer>
@@ -404,6 +461,10 @@
       <ul>
         
           <li>
+            <a href="/2016/07/02/animation/">animation</a>
+          </li>
+        
+          <li>
             <a href="/2016/07/02/transition/">transition</a>
           </li>
         
@@ -417,10 +478,6 @@
         
           <li>
             <a href="/2016/06/23/css3单位/">css3单位</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/22/hexo博客搭建/">hexo博客搭建</a>
           </li>
         
       </ul>
