@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>transition | web前端</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="transition1.transition 过渡
+执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。
+过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。
+过渡变换的速率效果方式/transition-timing-functi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="transition">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/transition/index.html">
+<meta property="og:site_name" content="web前端">
+<meta property="og:description" content="transition1.transition 过渡
+执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。
+过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。
+过渡变换的速率效果方式/transition-timing-functi">
+<meta property="og:updated_time" content="2016-07-02T02:25:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="transition">
+<meta name="twitter:description" content="transition1.transition 过渡
+执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。
+过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。
+过渡变换的速率效果方式/transition-timing-functi">
+  
+    <link rel="alternate" href="/atom.xml" title="web前端" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">web前端</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-transition" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/02/transition/" class="article-date">
+  <time datetime="2016-07-02T01:12:15.000Z" itemprop="datePublished">2016-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      transition
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="transition"><a href="#transition" class="headerlink" title="transition"></a>transition</h1><h2 id="1-transition-过渡"><a href="#1-transition-过渡" class="headerlink" title="1.transition 过渡"></a>1.transition 过渡</h2><ul>
+<li>执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。</li>
+<li>过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。</li>
+<li>过渡变换的速率效果方式/transition-timing-function:ease ||ease-in  ||ease-in-out  ||ease-out。</li>
+<li>执行过渡动画效果的开始时间/transition-delay</li>
+<li>设置过渡的时候 最好设置初始位置值 left top等</li>
+</ul>
+<h4 id="transition属性简写transition：all-0-5s-ease-in-out-1s"><a href="#transition属性简写transition：all-0-5s-ease-in-out-1s" class="headerlink" title="transition属性简写transition：all  0.5s ease-in-out  1s;"></a>transition属性简写transition：all  0.5s ease-in-out  1s;</h4><h2 id="2-transform2D"><a href="#2-transform2D" class="headerlink" title="2.transform2D"></a>2.transform2D</h2><ul>
+<li>transform:rotate(deg)旋转，通过指定的角度参数对原元素进行旋转，deg为角度单位，可为负数。</li>
+<li>transform:scale(x,y)缩放， 使元素水平方向和垂直方向同放;scalex(x)仅水平方向缩放；scaley（y）仅垂直方向缩放。可为整数、小数、负数。</li>
+<li>transform:skew(x,y)使元素在水平和垂直方向同时扭曲变形；skewx(x)仅使元素在水平方向扭曲变形;skewy(y)仅使元素在垂直方向扭曲变形，单位为deg。</li>
+<li>transform-origin(x,y)元素的基点位置，其中x和y的值可以是百分比，em，px；默认为x50%，y50%。</li>
+<li>transform:translate(x,y)平移，沿X  Y轴平移 数值可为负数。</li>
+</ul>
+<p>####transform属性缩写transform：rotate(0deg) scale(1) skew(30deg,30deg) translate(100px,100px);</p>
+<h2 id="3-transform3D"><a href="#3-transform3D" class="headerlink" title="3.transform3D"></a>3.transform3D</h2><ul>
+<li>rotate旋转，在3D效果中有3个方向可以转动 x，y，z<br><img src="" alt="icon"></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4jsija0001hosfpxu9o1dl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/28/css3选择器/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">css3xuanzeqi</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/02/transition/">transition</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/28/css3选择器/">css3xuanzeqi</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/24/meta/">meta</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/23/css3单位/">css3danwei</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/22/hexo博客搭建/">hexobokedajian</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
