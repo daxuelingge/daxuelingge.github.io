@@ -64,6 +64,61 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-css3渐变" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/02/css3渐变/" class="article-date">
+  <time datetime="2016-07-02T06:59:48.000Z" itemprop="datePublished">2016-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/07/02/css3渐变/">css3渐变</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css3-Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）"><a href="#css3-Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）" class="headerlink" title="css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）"></a>css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）</h4><h5 id="linear-gradient"><a href="#linear-gradient" class="headerlink" title="linear-gradient"></a>linear-gradient</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(to left top,red 20%, green 40%)</span><br></pre></td></tr></table></figure>
+<p><img src="" alt="icon"></p>
+<p>第一个属性表示渐变的起点，to left top 表示从从右下角到左上角的渐变</p>
+<p>第二个属性和第三个属性是一对参数，表示渐变的起始颜色和最终颜色，颜色多少可设置百分比，但是前面颜色百分比要比后面低才能实现渐变效果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(to left top,red 40% , green 20%);</span><br></pre></td></tr></table></figure>
+<p><img src="" alt="icon"></p>
+<p>渐变方向也可以设置角度来变换;ex:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(0deg,red,green);</span><br></pre></td></tr></table></figure>
+<p>0deg 是从下方为红色往上方绿色开始渐变，随着角度增加起始方向从正下方逆时针变化的。</p>
+<h5 id="radial-gradient"><a href="#radial-gradient" class="headerlink" title="radial-gradient"></a>radial-gradient</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:radial-gradient(center, shape, size, start-color, ..., last-color)</span><br></pre></td></tr></table></figure>
+<p>center:渐变起点的位置，可以为百分比，默认是图形的正中心。</p>
+<p>shape:渐变的形状，ellipse表示椭圆形，circle表示圆形。默认为ellipse，如果元素形状为正方形的元素，则ellipse和circle显示一样。</p>
+<p>size：渐变的大小，即渐变到哪里停止，它有四个值。 closest-side：最近边； farthest-side：最远边； closest-corner：最近角； farthest-corner：最远角</p>
+<h6 id="以为有默认属性，所以可以简写代码为"><a href="#以为有默认属性，所以可以简写代码为" class="headerlink" title="以为有默认属性，所以可以简写代码为"></a>以为有默认属性，所以可以简写代码为</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div &#123; background: radial-gradient(red, green, blue); &#125;</span><br></pre></td></tr></table></figure>
+<p>以中心（50% 50%）为起点，到最远角（farthest-corner），从red到green、blue的均匀渐变。</p>
+<p>颜色分布可以使用百分比，也可以使用PX来确定大小。</p>
+<h5 id="repeating-radial-gradient-重复径向渐变"><a href="#repeating-radial-gradient-重复径向渐变" class="headerlink" title="repeating-radial-gradient 重复径向渐变"></a>repeating-radial-gradient 重复径向渐变</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:repeating-radial-gradient(50px 50px at 100px 100px, red,yellow,orange,green)</span><br></pre></td></tr></table></figure>
+<p>50px 50px at 100px 100px 表达的意思是渐变的上下大小为50px，左右大小为50px  at 后面是循环渐变的中心点坐标</p>
+<p><img src="" alt="icon"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/02/css3渐变/" data-id="ciq4yii8400001msfwslhogcq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-animation" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/07/02/animation/" class="article-date">
@@ -111,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/02/animation/" data-id="ciq4n7u1f0001r0sftxk8c607" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/02/animation/" data-id="ciq4yii8900011msfl675pfla" class="article-share-link">Share</a>
       
       
     </footer>
@@ -176,7 +231,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4n7u1k0003r0sfis4nd24t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4yii9500061msf8c84q60z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -267,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq4n7u260004r0sfh44sm29j" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/28/css3选择器/" data-id="ciq4yii8e00031msfynw2u7vb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -319,7 +374,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="ciq4n7u1a0000r0sfwytbz6xo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/24/meta/" data-id="ciq4yii8s00051msfw1xnp1is" class="article-share-link">Share</a>
       
       
     </footer>
@@ -363,7 +418,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/23/css3单位/" data-id="ciq4n7u1i0002r0sfrsw4jch5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/23/css3单位/" data-id="ciq4yii8b00021msfr7p9ppy1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -421,7 +476,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/22/hexo博客搭建/" data-id="ciq4n7u2k0005r0sfvzh5cges" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/22/hexo博客搭建/" data-id="ciq4yii8i00041msfo3gwgufs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -461,6 +516,10 @@
       <ul>
         
           <li>
+            <a href="/2016/07/02/css3渐变/">css3渐变</a>
+          </li>
+        
+          <li>
             <a href="/2016/07/02/animation/">animation</a>
           </li>
         
@@ -474,10 +533,6 @@
         
           <li>
             <a href="/2016/06/24/meta/">meta</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/23/css3单位/">css3单位</a>
           </li>
         
       </ul>

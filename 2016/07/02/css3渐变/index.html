@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>css3渐变 | web前端</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）linear-gradient1background-image:linear-gradient(to left top,red 20%, green 40%)
+
+第一个属性表示渐变的起点，to left top 表示从从右下角到左上角的渐变
+第二个属性和第三个属性是一对参数，表示渐">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css3渐变">
+<meta property="og:url" content="http://yoursite.com/2016/07/02/css3渐变/index.html">
+<meta property="og:site_name" content="web前端">
+<meta property="og:description" content="css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）linear-gradient1background-image:linear-gradient(to left top,red 20%, green 40%)
+
+第一个属性表示渐变的起点，to left top 表示从从右下角到左上角的渐变
+第二个属性和第三个属性是一对参数，表示渐">
+<meta property="og:updated_time" content="2016-07-02T09:18:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css3渐变">
+<meta name="twitter:description" content="css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）linear-gradient1background-image:linear-gradient(to left top,red 20%, green 40%)
+
+第一个属性表示渐变的起点，to left top 表示从从右下角到左上角的渐变
+第二个属性和第三个属性是一对参数，表示渐">
+  
+    <link rel="alternate" href="/atom.xml" title="web前端" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">web前端</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-css3渐变" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/07/02/css3渐变/" class="article-date">
+  <time datetime="2016-07-02T06:59:48.000Z" itemprop="datePublished">2016-07-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css3渐变
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="css3-Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）"><a href="#css3-Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）" class="headerlink" title="css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）"></a>css3 Gradient分为linear-gradient（线性渐变）和radial-gradient（径向渐变）</h4><h5 id="linear-gradient"><a href="#linear-gradient" class="headerlink" title="linear-gradient"></a>linear-gradient</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(to left top,red 20%, green 40%)</span><br></pre></td></tr></table></figure>
+<p><img src="" alt="icon"></p>
+<p>第一个属性表示渐变的起点，to left top 表示从从右下角到左上角的渐变</p>
+<p>第二个属性和第三个属性是一对参数，表示渐变的起始颜色和最终颜色，颜色多少可设置百分比，但是前面颜色百分比要比后面低才能实现渐变效果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(to left top,red 40% , green 20%);</span><br></pre></td></tr></table></figure>
+<p><img src="" alt="icon"></p>
+<p>渐变方向也可以设置角度来变换;ex:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:linear-gradient(0deg,red,green);</span><br></pre></td></tr></table></figure>
+<p>0deg 是从下方为红色往上方绿色开始渐变，随着角度增加起始方向从正下方逆时针变化的。</p>
+<h5 id="radial-gradient"><a href="#radial-gradient" class="headerlink" title="radial-gradient"></a>radial-gradient</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:radial-gradient(center, shape, size, start-color, ..., last-color)</span><br></pre></td></tr></table></figure>
+<p>center:渐变起点的位置，可以为百分比，默认是图形的正中心。</p>
+<p>shape:渐变的形状，ellipse表示椭圆形，circle表示圆形。默认为ellipse，如果元素形状为正方形的元素，则ellipse和circle显示一样。</p>
+<p>size：渐变的大小，即渐变到哪里停止，它有四个值。 closest-side：最近边； farthest-side：最远边； closest-corner：最近角； farthest-corner：最远角</p>
+<h6 id="以为有默认属性，所以可以简写代码为"><a href="#以为有默认属性，所以可以简写代码为" class="headerlink" title="以为有默认属性，所以可以简写代码为"></a>以为有默认属性，所以可以简写代码为</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">div &#123; background: radial-gradient(red, green, blue); &#125;</span><br></pre></td></tr></table></figure>
+<p>以中心（50% 50%）为起点，到最远角（farthest-corner），从red到green、blue的均匀渐变。</p>
+<p>颜色分布可以使用百分比，也可以使用PX来确定大小。</p>
+<h5 id="repeating-radial-gradient-重复径向渐变"><a href="#repeating-radial-gradient-重复径向渐变" class="headerlink" title="repeating-radial-gradient 重复径向渐变"></a>repeating-radial-gradient 重复径向渐变</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background-image:repeating-radial-gradient(50px 50px at 100px 100px, red,yellow,orange,green)</span><br></pre></td></tr></table></figure>
+<p>50px 50px at 100px 100px 表达的意思是渐变的上下大小为50px，左右大小为50px  at 后面是循环渐变的中心点坐标</p>
+<p><img src="" alt="icon"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/07/02/css3渐变/" data-id="ciq4yii8400001msfwslhogcq" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/07/02/animation/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">animation</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">七月 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/02/css3渐变/">css3渐变</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/animation/">animation</a>
+          </li>
+        
+          <li>
+            <a href="/2016/07/02/transition/">transition</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/28/css3选择器/">css3选择器</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/24/meta/">meta</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
