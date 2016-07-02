@@ -17,13 +17,16 @@
 执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。
 过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。
 过渡变换的速率效果方式/transition-timing-functi">
-<meta property="og:updated_time" content="2016-07-02T02:25:28.000Z">
+<meta property="og:image" content="https://github.com/daxuelingge/daxuelingge.github.io/blob/master/images/3D%E7%A9%BA%E9%97%B4.png?raw=true">
+<meta property="og:image" content="https://github.com/daxuelingge/daxuelingge.github.io/blob/master/images/%E6%97%8B%E8%BD%AC%E6%96%B9%E5%BC%8F.png?raw=true">
+<meta property="og:updated_time" content="2016-07-02T02:52:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="transition">
 <meta name="twitter:description" content="transition1.transition 过渡
 执行过渡变换的属性/transition-property:all || width ||height  ||left  ||right  ||font-size  ||color 等等。
 过渡变换延续的时间/ transition-duration:单位秒s，可以为小数。
 过渡变换的速率效果方式/transition-timing-functi">
+<meta name="twitter:image" content="https://github.com/daxuelingge/daxuelingge.github.io/blob/master/images/3D%E7%A9%BA%E9%97%B4.png?raw=true">
   
     <link rel="alternate" href="/atom.xml" title="web前端" type="application/atom+xml">
   
@@ -109,14 +112,25 @@
 <li>transform:translate(x,y)平移，沿X  Y轴平移 数值可为负数。</li>
 </ul>
 <p>####transform属性缩写transform：rotate(0deg) scale(1) skew(30deg,30deg) translate(100px,100px);</p>
-<h2 id="3-transform3D"><a href="#3-transform3D" class="headerlink" title="3.transform3D"></a>3.transform3D</h2><ul>
-<li>rotate旋转，在3D效果中有3个方向可以转动 x，y，z<br><img src="" alt="icon"></li>
+<h2 id="3-transform3D"><a href="#3-transform3D" class="headerlink" title="3.transform3D"></a>3.transform3D</h2><h4 id="3-1-transform-rotate-旋转，在3D效果中有3个方向可以转动-x，y，z"><a href="#3-1-transform-rotate-旋转，在3D效果中有3个方向可以转动-x，y，z" class="headerlink" title="3.1 transform:rotate()旋转，在3D效果中有3个方向可以转动 x，y，z"></a>3.1 transform:rotate()旋转，在3D效果中有3个方向可以转动 x，y，z</h4><p><img src="https://github.com/daxuelingge/daxuelingge.github.io/blob/master/images/3D%E7%A9%BA%E9%97%B4.png?raw=true" alt="icon"><br><img src="https://github.com/daxuelingge/daxuelingge.github.io/blob/master/images/%E6%97%8B%E8%BD%AC%E6%96%B9%E5%BC%8F.png?raw=true" alt="icon"></p>
+<h4 id="3-2transform-style-嵌套元素如何在3D空间中呈现"><a href="#3-2transform-style-嵌套元素如何在3D空间中呈现" class="headerlink" title="3.2transform-style:嵌套元素如何在3D空间中呈现."></a>3.2transform-style:嵌套元素如何在3D空间中呈现.</h4><ul>
+<li>transform-style: flat | preserve-3d;</li>
+<li>flat默认，所有子元素在2D平面呈现</li>
+<li>preserve-3d，所有子元素在3D平面呈现.注意设置这个属性之后，就不能overfilow:hidden</li>
 </ul>
+<h4 id="3-3-perspective-视距，视角-设置查看者的位置"><a href="#3-3-perspective-视距，视角-设置查看者的位置" class="headerlink" title="3.3 perspective:视距，视角 设置查看者的位置"></a>3.3 perspective:视距，视角 设置查看者的位置</h4><p>相当于舞台之外观众对于舞台存在的位置</p>
+<h4 id="3-4-translate平移"><a href="#3-4-translate平移" class="headerlink" title="3.4 translate平移"></a>3.4 translate平移</h4><p>与2D中方式差不多，在3D中会增加z轴的平移，数值同样可为负数。</p>
+<h4 id="3-5-perspective-origin"><a href="#3-5-perspective-origin" class="headerlink" title="3.5 perspective-origin"></a>3.5 perspective-origin</h4><p>属性定义3D元素所基于的X轴和Y轴。可以改变3D元素的底部位置。</p>
+<p>当为元素定义 perspective-origin 属性时，其子元素会获得透视效果，而不是元素本身。</p>
+<p>该属性必须与 perspective 属性一同使用，而且只影响 3D 转换元素。</p>
+<h4 id="3-6-backface-visibility"><a href="#3-6-backface-visibility" class="headerlink" title="3.6 backface-visibility"></a>3.6 backface-visibility</h4><p>为元素旋转背面是否可见</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">backface-visibility: visible | hidden</span><br></pre></td></tr></table></figure>
+<p>visible为默认属性 是可见的；hidden 是不可见。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4jsija0001hosfpxu9o1dl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/02/transition/" data-id="ciq4kqigf0004iysfnrhurpz2" class="article-share-link">Share</a>
       
       
     </footer>
